@@ -1,3 +1,6 @@
+import JsonData.Generator;
+import JsonData.User;
+import RequestData.UserClient;
 import com.tngtech.java.junit.dataprovider.DataProvider;
 import com.tngtech.java.junit.dataprovider.DataProviderRunner;
 import com.tngtech.java.junit.dataprovider.UseDataProvider;

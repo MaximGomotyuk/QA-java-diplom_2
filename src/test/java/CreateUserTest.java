@@ -1,3 +1,6 @@
+import JsonData.Generator;
+import JsonData.User;
+import RequestData.UserClient;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
 import org.junit.After;
@@ -16,7 +19,7 @@ public class CreateUserTest {
     private User user;
     private String accessToken;
 
-    private final String someUserErrorMessage = "User already exists";
+    private final String someUserErrorMessage = "JsonData.User already exists";
 
     @Before
     public void setUp() {

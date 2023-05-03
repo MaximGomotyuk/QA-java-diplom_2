@@ -1,3 +1,5 @@
+package JsonData;
+
 import java.util.ArrayList;
 
 public class Order {
@@ -28,7 +30,7 @@ public class Order {
 
     @Override
     public String toString() {
-        return "Order{" +
+        return "JsonData.Order{" +
                 "ingredients=" + ingredients +
                 '}';
     }

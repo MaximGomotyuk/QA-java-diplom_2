@@ -1,3 +1,6 @@
+package RequestData;
+
+import JsonData.Order;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
 
@@ -9,7 +12,7 @@ public class OrderClient extends RestClient {
     @Step("Создание заказа")
     public Response orderCreate(Order order, String token) {
         return (Response) given()
-                .spec(getBaseSpecSettings())
+                .spec(RestClient.getBaseSpecSettings())
                 .headers("Authorization", token)
                 .body(order)
                 .when()
@@ -21,7 +24,7 @@ public class OrderClient extends RestClient {
     @Step("Получение списка заказов")
     public Response getOrderList(String token) {
         return (Response) given()
-                .spec(getBaseSpecSettings())
+                .spec(RestClient.getBaseSpecSettings())
                 .header("authorization", token)
                 .when()
                 .get(ORDERS)

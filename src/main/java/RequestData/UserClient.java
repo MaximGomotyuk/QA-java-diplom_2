@@ -1,3 +1,7 @@
+package RequestData;
+
+import JsonData.User;
+import JsonData.UserCredentials;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
 

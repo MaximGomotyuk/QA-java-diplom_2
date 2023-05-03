@@ -1,3 +1,7 @@
+import JsonData.Generator;
+import JsonData.User;
+import JsonData.UserCredentials;
+import RequestData.UserClient;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
 import org.junit.After;
@@ -16,7 +20,7 @@ public class ChangeUserTest {
     private User user;
     private String accessToken;
     private final String AUTH_ERROR_MESSAGE = "You should be authorised";
-    private final String EXIST_EMAIL_ERROR = "User with such email already exists";
+    private final String EXIST_EMAIL_ERROR = "JsonData.User with such email already exists";
 
 
     @Before

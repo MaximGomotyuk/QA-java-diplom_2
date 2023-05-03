@@ -1,3 +1,5 @@
+package JsonData;
+
 import net.datafaker.Faker;
 
 public class Generator {

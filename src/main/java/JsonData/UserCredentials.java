@@ -1,3 +1,5 @@
+package JsonData;
+
 public class UserCredentials {
     private final String email;
     private final String password;
@@ -13,7 +15,7 @@ public class UserCredentials {
 
     @Override
     public String toString() {
-        return "UserCredentials{" +
+        return "JsonData.UserCredentials{" +
                 "email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 '}';

@@ -1,3 +1,7 @@
+import JsonData.Generator;
+import JsonData.User;
+import JsonData.UserCredentials;
+import RequestData.UserClient;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
 import org.junit.After;
